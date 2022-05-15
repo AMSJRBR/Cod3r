@@ -4,7 +4,7 @@ Crie uma função que recebe os comprimentos dos três lados de um triângulo e 
 ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
 triângulo). */
 
-function triangulo(a, b, c) {
+/*unction triangulo(a, b, c) {
     const equilatero = (a = b = c)
     const isosceles = (a = b != c, a = c !=b, b = c != a)
     const escaleno = (a != b != c)
@@ -22,21 +22,17 @@ function triangulo(a, b, c) {
 
 triangulo(3, 3, 3)
 triangulo(3, 4, 5)
-triangulo(3, 3, 4)
+triangulo(3, 3, 4) */
 
-function triangulo2 (a, b, c) {
-    const a = a
-    const b = b
-    const c = c
 
-    if (a == b == c) {
+// Atentar para ( && = e ) ( || = ou ) e sempre de duas em duas operações ( a = b && b = c ) 
+function triangulo2 (a, b, c) {    
+    if (a == b && b == c) {
         console.log("equilatero")
-    } else if ( a != b != c) {
+    } else if ( a != b && b != c) {
         console.log("Escaleno")
-    } else if (a = b != c, a = c !=b, b = c != a) {
-        console.log("Isoscelees")
     } else {
-        console.log("Inválido")
+        console.log("Isosceles")
     }
 }
 
