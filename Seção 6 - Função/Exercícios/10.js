@@ -20,3 +20,21 @@ divisivelPor3 = (d) => {
 divisivelPor3(4)
 divisivelPor3(6)
 divisivelPor3(8)
+
+divisivelPor3(3)
+divisivelPor3(2)
+divisivelPor3(150)
+
+// Resolução do professor 
+
+function verificaNumero (numero) {
+    if(numero % 3 == 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log(verificaNumero(3))
+console.log(verificaNumero(2))
+console.log(verificaNumero(150))
