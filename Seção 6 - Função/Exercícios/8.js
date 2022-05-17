@@ -14,6 +14,25 @@ aconteceu no sétimo jogo.)
 
  */
 
-tempPedro = () => {
-    
+let stringP = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
+
+tempPedro = (stringP) => {
+    let contagem = stringP.split(", ")
+    let sequenciaDeRecords = 0
+    let piorJogo = 1
+    let maiorPt = contagem[0]
+    let menorPt = contagem[0]
+
+    for (let valores = 1; valores < contagem.length; valores++) {
+        if(contagem[valores] > maiorPt) {
+            maiorPt = contagem[valores]
+            sequenciaDeRecords++
+        } else if (contagem[valores] < menorPt) {
+            menorPt = contagem[valores]
+            piorJogo = valores + 1;
+        }
+    }
+    return [sequenciaDeRecords, piorJogo]
 }
+
+console.log(tempPedro(stringP))
