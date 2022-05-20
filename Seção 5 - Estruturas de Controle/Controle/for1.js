@@ -13,4 +13,7 @@ for(let i = 0; i < notas.length; i++) { // Propriedade que diz a quantidade de i
     console.log(`nota = ${notas[i]}`)
 }
 
+for (let impar = impar / 3 % 0 && impar + 2; impar != 0; impar++ ) {
+    console.log(impar)
+}
 // console.log(i) atentar para var e let
