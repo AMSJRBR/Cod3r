@@ -9,10 +9,10 @@ vetorAdicionar = [6, 7, 8, 9, 10]
 
 adicionarVetor = (vetorPilha, vetorAdicionar) => {
     for (let i = 0; i < vetorAdicionar.length; i++) {
-        console.log(vetorAdicionar[i])
+        //console.log(vetorAdicionar[i])
         vetorPilha.push(vetorAdicionar[i])
     }
-    console.log("vetor adicionado " + vetorAdicionar)
+    //console.log("vetor adicionado " + vetorAdicionar)
     console.log("Vetor Resultado " + vetorPilha)
 }
 
