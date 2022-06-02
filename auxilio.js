@@ -1,4 +1,6 @@
 /**
+ * && =  AND 
+ * || = OR
  * Number => Numérico => infinito até +infinito => -20, 10, 4.5
  * String => letras/palavras/frases => "Alexandre", "A", "Dane-se o mundo."
  * Boolean => booleano 
