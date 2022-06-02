@@ -10,23 +10,10 @@ estaEntre(16, 100, 160) // retornará false
 estaEntre(3, 150, 3) // retornará false
 estaEntre(3, 150, 3, true) // retornará true  */
 
-estaEntre1 = ( min, max, num, inclusivo = false) => {
-    if (num > min && num < max) {
-        return true
-    } else if (inclusivo > min || inclusivo < max) {
-        return true
-    } else if (inclusivo == undefined) {
-        return false
-    } else if (inclusivo == 'Number') {
-        return true
-    } else
-        return true
-}
-
-console.log(estaEntre1(10, 100, 50))
-console.log(estaEntre1(16, 100, 160))
-console.log(estaEntre1(3, 150, 3))
-console.log(estaEntre1(3, 150, 3, true))
+console.log(estaEntre2(10, 100, 50))
+console.log(estaEntre2(16, 100, 160))
+console.log(estaEntre2(3, 150, 3))
+console.log(estaEntre2(3, 150, 3, true))
 
 function estaEntre2(minimo, maximo, numero, inclusivo = false) {
     if (inclusivo) return numero >= minimo && numero <= maximo
@@ -36,3 +23,8 @@ function estaEntre2(minimo, maximo, numero, inclusivo = false) {
 function estaEntre3(minimo, maximo, numero, inclusivo = false) {
     return inclusivo ? numero >= minimo && numero <= maximo : numero > minimo && numero < maximo
 }
+
+console.log(estaEntre3(10, 100, 50))
+console.log(estaEntre3(16, 100, 160))
+console.log(estaEntre3(3, 150, 3))
+console.log(estaEntre3(3, 150, 3, true))
