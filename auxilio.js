@@ -92,6 +92,7 @@ console.log("Pode comprar churros ? " + comprouChurros)
  * contador = 3 => Executei
  * contador = 4 => Executei
  * contador = 5 => não executei
+ * contador = 6 => Não executei
  */
 
 let quantasVezesRepetir = 5;
