@@ -1,0 +1,66 @@
+<h1>Tabela</h1>
+<!--  -->
+<table>
+    <caption>Produtos</caption>
+    <!-- Opcional (thead) - define área do cabeçalho da tabela -->
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th class="quantidade">Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iPad</td>
+            <td>3289.00</td>
+            <td class="quantidade">5</td>
+            <td>16445,00</td>
+        </tr>
+        <tr>
+            <td>Samsung S9</td>
+            <td>2649,00</td>
+            <td class="quantidade">8</td>
+            <td>21192,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!-- Colspan e Rowspan Meios para preencher a coluna-->
+            <td colspan="3" rowspan="2">Total</td>
+            <td>37637,00</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+
+    tfoot {
+        background-color: #444;
+        color: #fff;
+        font-weight: 100;
+    }
+
+    .quantidade {
+        text-align: center;
+    }
+</style>
